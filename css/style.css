@@ -128,3 +128,8 @@ section {
     justify-content: center;
     height: 200px;
 }
+
+.noDecorationAnchor{
+    text-decoration: none;
+    color: black;
+}
