@@ -85,9 +85,31 @@ section {
 
 }
 
+@media (max-width : 576px){
+    .mobsize{
+        font-size: 10px;
+    }
+
+    .mobsizeHeader{
+        font-size: 15px;
+    }
+}
+
+@media (max-width : 425px){
+    .mobsize{
+        display: none;
+    }
+}
+
+.blur{
+    filter: blur(3px);
+    z-index: -5;
+}
+
+
 .icons {
     display: flex;
-    gap: 25px;
+    gap: 20px;
     justify-content: center;
     align-items: center;
     font-size: 24;
@@ -132,4 +154,14 @@ section {
 .noDecorationAnchor{
     text-decoration: none;
     color: black;
+}
+
+@media(max-width : 650px){
+    .hireMobileHeader{
+        font-size: 20px;
+    }
+
+    .hireMobile{
+        font-size: 15px;
+    }
 }
