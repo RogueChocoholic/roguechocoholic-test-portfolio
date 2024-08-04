@@ -164,4 +164,18 @@ section {
     .hireMobile{
         font-size: 15px;
     }
+
+    .footerSize{
+        font-size: 12px;
+    }
+}
+
+.homeContainer{
+    height: 50vw;
+}
+
+@media (max-width : 576px) {
+    .homeContainer{
+        height: 60vh;
+    }
 }
