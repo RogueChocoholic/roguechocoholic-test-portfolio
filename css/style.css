@@ -3,6 +3,10 @@
     src: url("../resources/fonts/Raleway-VariableFont_wght.ttf");
 }
 
+:root{
+    color-scheme: light;
+}
+
 body {
     margin: 0;
     overflow-x: hidden;
