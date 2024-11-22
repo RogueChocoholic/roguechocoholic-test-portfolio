@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PJ BIO</title>
+    <!-- style -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!-- fontawsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="./css/owl.carousel.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.css">
+</head>
+
+<body class="body">
+
+    <div class="container-fluid body" style="padding: 0px;">
+        <section class="homeSection d-flex flex-column align-items-center" id="homeSection">
+            <nav class="navbar position-relative navbar-expand-lg blurBackDrop mt-3 mx-5 px-lg-5 px-3"
+                style="z-index: 1;" id="topNav">
+
+                <div class="container ">
+
+                    <a class="navbar-brand" href="#">
+                        <img src="./resources/logo1@300x.png" alt="Logo" width="42.38" height="60"
+                            class="d-inline-block align-text-top">
+
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Guidelines</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Quizes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Test Papers</a>
+                            </li>
+
+                        </ul>
+                        <button class="btn btn-sm btn-outline-gold rounded-2 px-3 m-2"
+                            onclick="clickedSignup();">Signup</button>
+                        <button class="btn btn-sm btn-gold rounded-2 px-3 m-2"
+                            onclick="showLoginAlert();">Login</button>
+                        <a class="btn btn-sm btn-gold m-2 px-3 py-1 rounded-start-5 position-relative"><i
+                                class="fas fa-user-alt"> </i><span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                                style="font-size: xx-small;">
+                                1
+                                <span class="visually-hidden">My Profile</span>
+                            </span></a>
+                        <a class="btn btn-sm btn-gold m-2 px-3 py-1 rounded-end-5 position-relative"><i
+                                class="fas fa-shopping-cart"> </i><span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                                style="font-size: xx-small;">
+                                0
+                                <span class="visually-hidden">unread messages</span>
+                            </span></a>
+
+
+
+                    </div>
+                </div>
+            </nav>
+            <div class="owl-carousel owl-theme homeCarousel goUp"
+                style="height:100dvh; background-color: rgb(54, 54, 54); z-index: 0;">
+
+                <div class="d-flex justify-content-center align-items-center flex-column"
+                    style="background-image: url(./resources/home/homeCarousel3.5.jpg); background-size: cover; height: 100dvh;">
+
+                    <h1 class="px-5 subtext text-light " style="font-size: 4vmax;">
+                        <center><i class="fa-solid fa-0 fa-quote-left subtext "></i>
+                            <!-- Ôj úoHdfõ ;d¾lsl újrKh -->
+                            <br> Result එකට වගකියන ලංකාවේ එකම BIO පන්තිය
+                            <br> <i class="fa-solid fa-quote-right"></i>
+                        </center>
+                    </h1>
+
+                </div>
+                <div class="d-flex justify-content-center align-items-center flex-column"
+                    style="background-image: url(./resources/home/homeCarousel5.3.jpg); background-size: cover; height: 100dvh;">
+
+                    <!-- <h1 class="px-5 subtext text-light" style="font-size: 4vmax;">
+                        <center><i class="fa-solid fa-0 fa-quote-left subtext "></i>
+                            Ôj úoHdfõ ;d¾lsl újrKh
+                            <br> Result එකට වගකියන ලංකාවේ එකම BIO පන්තිය
+                            <br> <i class="fa-solid fa-quote-right"></i>
+
+                        </center>
+                    </h1> -->
+
+                </div>
+                <div class="d-flex justify-content-center align-items-center flex-column"
+                    style="background-image: url(./resources/home/homeCarousel4.2.jpg); background-size: cover; height: 100dvh;">
+
+                    <!-- <h1 class="px-5 subtext text-light" style="font-size: 4vmax;">
+                        <center><i class="fa-solid fa-0 fa-quote-left subtext "></i>
+                            Ôj úoHdfõ ;d¾lsl újrKh
+                            <br> Result එකට වගකියන ලංකාවේ එකම BIO පන්තිය
+                            <br> <i class="fa-solid fa-quote-right"></i>
+
+                        </center>
+                    </h1> -->
+
+                </div>
+
+
+                <!-- 
+            <div style="position: relative;" class="d-flex justify-content-center align-items-center">
+                <div class="" style=""></div> <img src="./resources/home/homeCarousel1.png"
+                    style="position: inherit;" class="rounded-5" alt="">
+
+
+            </div>
+            <div style="position: relative;"> <img src="./resources/home/homeCarousel2.png"
+                    style="position: inherit;" class="rounded-5" alt=""></div> -->
+
+            </div>
+
+            <button class="btn btn-outline-warning sticky-bottom rounded-5 pb-2 goUp goUpBtn"
+                onclick="scrollToSection();"><i class="fas fa-chevron-down"></i>
+
+
+            </button>
+
+        </section>
+        <!-- <section class="position-sticky sticky-top homeSection2" style="background-image: url(./resources/home/topography\ BG.svg);background-size: cover;" id="homeSection2"> -->
+        <div class="sticky-top mx-5 px-md-5">
+            <nav class="navbar navbar-expand-lg blurBackDrop  rounded-5 mt-2 " id="navNiew">
+                <div id="particles-js" class="position-absolute col-10" style="z-index: -2;"></div>
+
+                <div class="container">
+                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                    <a class="navbar-brand" href="#">
+                        <img src="./resources/logo1@300x.png" alt="Logo" width="42.38" height="60"
+                            class="d-inline-block align-text-top">
+
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Guidelines</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Quizes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Test Papers</a>
+                            </li>
+
+                        </ul>
+                        <button class="btn btn-sm btn-outline-gold rounded-2 px-3 m-2"
+                            onclick="clickedSignup();">Signup</button>
+                        <button class="btn btn-sm btn-gold rounded-2 px-3 m-2"
+                            onclick="showLoginAlert();">Login</button>
+                        <a class="btn btn-sm btn-gold m-2 px-3 py-1 rounded-start-5 position-relative"><i
+                                class="fas fa-user-alt"> </i><span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                                style="font-size: xx-small;">
+                                1
+                                <span class="visually-hidden">My Profile</span>
+                            </span></a>
+                        <a class="btn btn-sm btn-gold m-2 px-3 py-1 rounded-end-5 position-relative"><i
+                                class="fas fa-shopping-cart"> </i><span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                                style="font-size: xx-small;">
+                                0
+                                <span class="visually-hidden">unread messages</span>
+                            </span></a>
+
+
+                        <!-- <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form> -->
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+        <!-- </section> -->
+
+        <section id="homeSection2" class="homeSection2 h-auto px-5"
+            style="min-height: 100vh; background-color: whitesmoke;">
+
+            <div class="row col-12">
+                <div class="px-sm-5 col-12 col-lg-6 homeSecStagger d-flex align-items-center justify-content-center bg-white rounded-5">
+                    <center>
+                        <h1 class="bindumathi_font sectionTitle1 homeSecStagger" style="font-weight: bold;">wmf.a m%;sM,
+                            <!-- <i class="fas fa-quote-left"></i> --> <img src="./resources/home/animatedComponents/award.gif" height="60px" alt="">
+                        </h1>
+                        <hr>
+                        <h3 class="bindumathi_font homeSecStagger sectionSubTitle">2023 ^2024& Wiiafm, lKavdhfï"
+                        </h3>
+                        <ul style="list-style: none;">
+                            <h3 class="bindumathi_font homeSecStagger">ffjoH mSghg
+                                - 7¡7]
+                            </h3>
+                            <h3 class="bindumathi_font homeSecStagger">uq¿ m%;sY;h
+                                - 22¡6]
+                            </h3>
+                            <h3 class="bindumathi_font homeSecStagger" style="color: red;">
+                                iu;a
+                                m%;sY;h - 100] la
+                            </h3>
+                            <!-- <li class="bindumathi_font homeSecStagger sectionText" style="font-size: 2rem;">ffjoH mSghg
+                                - 7¡7]
+                            </li>
+                            <li class="bindumathi_font homeSecStagger sectionText" style="font-size:2rem;">uq¿ m%;sY;h
+                                - 22¡6]
+                            </li>
+                            <li class="bindumathi_font homeSecStagger sectionText" style="font-size: 2rem; color: red;">
+                                iu;a
+                                m%;sY;h - 100] la
+                            </li> -->
+                        </ul>
+                        <hr>
+                    </center>
+                </div>
+                <div class="p-lg-5 col-12 col-lg-6 py-5">
+                    <center>
+                        <h2 class=" homeSecStagger py-3">
+                            <span class="bindumathi_font">msg msg fojk jrg;a lsisÿ &lt;ufhl= wiu;a
+                                fkdjQ ,xldfõ tlu </span>
+                            <span>Bio</span>
+                            <span class="bindumathi_font"> mka;sh fuh fõ</span>
+
+                            <!-- <i class="fas fa-quote-left"></i> -->
+                        </h2>
+                        <div class="row align-items-center justify-content-center gap-3 homeSecStagger">
+                            <div class="col-xl-5 col-lg-12 col-sm-4 rounded-5 glassContainer shadow">
+                                <h5 class="bindumathi_font text-dark" style="font-size: 2rem;">l¿;r</h5>
+                                <h2 class="vecupeksha_font " style="margin: -10px; color: navy;">9</h2>
+                                <h5 class="bindumathi_font" style="font-size: 1.5rem; color: #b8860b;">ksfõoHd
+                                    úfc.=Kj¾Ok</h5>
+                                <small>Index No.6705367</small>
+                            </div>
+                            <div class=" col-xl-5 col-lg-12 col-sm-4 rounded-5 glassContainer shadow">
+                                <h5 class="bindumathi_font text-dark" style="font-size: 2rem;">l¿;r</h5>
+                                <h2 class="vecupeksha_font " style="margin: -10px; color: navy;">87</h2>
+                                <h5 class="bindumathi_font" style="font-size: 1.5rem; color: #b8860b;">fiykahd ,shkf.a
+                                </h5>
+                                <small>Index No.6723470</small>
+
+                            </div>
+                            <div class="col-xl-5 col-lg-12 col-sm-4 rounded-5 glassContainer shadow">
+                                <h5 class="bindumathi_font text-dark" style="font-size: 2rem;">l¿;r</h5>
+                                <h2 class="vecupeksha_font " style="margin: -10px; color: navy;">101 </h2>
+                                <h5 class="bindumathi_font" style="font-size: 1.5rem; color: #b8860b;">pfudaoa lúYal
+                                </h5>
+                                <small>Index No.6704794</small>
+
+                            </div>
+                            <div class="col-xl-5 col-lg-12 col-sm-4 rounded-5 glassContainer shadow">
+                                <h5 class="bindumathi_font text-dark" style="font-size: 2rem;">fld&lt;U</h5>
+                                <h2 class="vecupeksha_font" style="margin: -10px; color: navy;">348</h2>
+                                <h5 class="bindumathi_font" style="font-size: 1.5rem; color: #b8860b;">ßisl wurisxy</h5>
+                                <small>Index No.6020432</small>
+
+                            </div>
+
+                        </div>
+                    </center>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="p-5 h-auto topBlurBackDrop" id="aboutTeacherSection">
+
+            <div class="row">
+                <div class="col-lg-5 col-12">
+                    <img src="./resources/home/portrait.png" id="portraitImg" alt="image"
+                        class="col-10 offset-1 offset-lg-2">
+                </div>
+                <div class="col-lg-6 col-sm-10 col-12 offset-lg-0 offset-sm-1 offset-0 py-5 d-flex justify-content-center align-items-center flex-column"
+                    style="text-align: justify;" id="aboutTeacherTitle">
+                    <div class="col-12 p-md-5 rounded-5">
+                        <h1 class="bindumathi_font py-3 " id="" style="font-weight: bold;">.=rejrhd ms,sn|j <img src="./resources/home/animatedComponents/stethoscope.gif" alt="" height="60px"></h1>
+                        <ul>
+                            <!-- <li>
+                                <h5 class="bindumathi_font">2021 jif¾ Ôj úoHdj wxYfhka Wiia fm&lt; úNd.hg fmkS isg
+                                    m&lt;uq
+                                    wjia:dfjkau Èjhsfka by&lt;u idud¾:hla jd¾:d lrñka iu;aj Y%S chj¾Okmqr úYajúoHd,Sh
+                                    ffjoH
+                                    mSGhg
+                                    f;aÍ m;aj j¾;udkfhys tlS ffjoH Wmdê lghq;= id¾:lj yodrñka isà¡</h5>
+                            </li> -->
+                            <li>
+                                <h5>2021 වසරේ ජීව විද්‍යාව අංශයෙන් උසස් පෙළ විභාගයට පෙනී සිට පළමු අවස්ථාවෙන්ම දිවයිනේ
+                                    ඉහළම සාමාර්ථයක් වාර්ථා කරමින් සමත්ව ශ්‍රී ජයවර්ධනපුර විශ්වවිද්‍යාලීය වෛද්‍ය පීඨයට
+                                    තේරී පත්ව වර්තමානයෙහි ඉකී වෛද්‍ය උපාධි කටයුතු සාර්ථකව හදාරමින් සිටී.</h5>
+                            </li>
+                            <!-- <li>
+                                <h5 class="bindumathi_font">ffjoH YsIHhl= f,i ,;a w;aoelSïo id¾:lj Wiiafm, yodrd ,;a
+                                    w;aoelSïo
+                                    hk foj¾.hu mokï lrf.k ´kEu uÜgul isák isiqfjl= úYsIaG m%;sM,hla lrd Tijd ;eîug ylsùu
+                                    Tyqf.a
+                                    iqúfYaI;ajhhs¡ </h5>
+                            </li>
+                            <li>
+                                <h5 class="bindumathi_font">m%dfhda.sl;ajfhka hq;=j ;d¾lslj b.ekaùu" tf;la mej;s
+                                    idïm%odhsl UෛO
+                                    b.ekaùï l,dj m%;sl%uKhg fya;= úh¡</h5>
+                            </li> -->
+                            <li>
+                                <h5 class="">මාස 8ක් වැනි කාලයක් තුළ මුළු විශය නිර්දේශයම 100%ක් අංගසම්පූර්ණවම ඉගැන්වීම
+                                    සිදුකරන
+                                    අතර ප්‍රශ්න
+                                    පත්‍ර විශාල සංඛ්‍යාවක් පන්තිය තුලදී ලියවනු ලැබේ.</h5>
+                            </li>
+                        </ul>
+
+
+
+
+                        <h6 class="d-flex align-items-center justify-content-center" style="opacity: 0.5;">
+                            <div class="col-1 m-2">
+                                <hr>
+                            </div>
+                            <i class="fa fa-circle m-2"></i>
+                            <div class="col-1 m-2">
+                                <hr>
+                            </div>
+                            <i class="fa fa-circle m-2"></i>
+                            <div class="col-1 m-2">
+                                <hr>
+                            </div>
+                            <i class="fa fa-circle m-2"></i>
+                            <div class="col-1 m-2">
+                                <hr>
+                            </div>
+                        </h6>
+                    </div>
+                    <div class="col-12 py-md-4-3">
+
+                        <h1 class=" text-center" id="aboutText">
+                            <span style="font-size: 3vmax;font-weight: bold;color: #b8860b;">&ldquo;</span>
+                            <span class="vecupeksha_font " style="color: #b8860b;">wm Ôjl mrmqf¾ ó&lt;Õ mqrela
+                                wuqKkafkuq</span>
+                            <span style="font-size: 4vmax;font-weight: bold;color: #b8860b;">&rdquo;</span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="p-sm-5 p-0 m-5 h-auto" style="background-color: white; z-index: 5;">
+            <h1 style="color: navy;" class="text-center px-5">Our Process <!-- &nbsp;<i class="fas fa-cogs"></i> --> <img src="./resources/home/animatedComponents/mentor.gif" alt="" height="60px"></h1>
+            <div class="row px-5">
+                <div class="column-gap-lg-4 col-md-6 col-12  d-flex align-items-center justify-content-center flex-column py-5 rounded-5"
+                    style="text-align: center;">
+                    <h4 class="py-3">Revision Class</h4>
+                    <p class="fs-6"> මාස 8ක් වැනි කාලයක් තුළ මුළු විශය නිර්දේශයම 100%ක් අංගසම්පූර්ණවම ඉගැන්වීම සිදුකරන
+                        අතර ප්‍රශ්න
+                        පත්‍ර විශාල සංඛ්‍යාවක් පන්තිය තුලදී ලියවනු ලැබේ.</p>
+
+                </div>
+                <div class="column-gap-lg-4 col-md-6 col-12  d-flex align-items-center justify-content-center flex-column py-5 rounded-5"
+                    style="text-align: center;">
+                    <h4 class="py-3">Theory Class</h4>
+                    <p class="fs-6"> පළමු අවස්ථාවෙන්ම A සාමාර්ථයක් ලබා ගැනීමට අවශ්‍යවන හොඳ අඩිතාලමක් සහිත අංගසම්පූර්ණ
+                        විශය නිර්දේශය උගන්වයි <br>
+                        වාර විභාග වලදීද උපරිම ලකුණු ලබාගත හැකිවන පරිදි ප්‍රශ්නපත්‍ර ලිවීමට මනාව පුරුදු කරයි.
+                    </p>
+
+                </div>
+                <div class="column-gap-lg-4 col-md-6 col-12  d-flex align-items-center justify-content-center flex-column py-5 rounded-5"
+                    style="text-align: center;">
+                    <h4 class="py-3">Rapid Revision</h4>
+                    <p class="fs-6"> ප්‍රතිඵල පැමිණීමේන් පසු පන්තියට සහභාගී වන සිසුන්ට මාස 4ක් වැනි කෙටි කාලයක් තුළ
+                        ම්ගහැරුණු පාඩම් ආවරණය කිරීමට පවත්වනු ලබන විශේෂ පන්තියයි.</p>
+
+                </div>
+                <div class="column-gap-lg-4 col-md-6 col-12  d-flex align-items-center justify-content-center flex-column py-5 rounded-5"
+                    style="text-align: center;">
+                    <h4 class="py-3">Paper Class</h4>
+                    <p class="fs-6"> අංගසම්පූර්ණ ප්‍රශ්නපත්‍ර නියමිත කාලයට ලියවා Real අනුමාන නිබන්ධන සහ Marking
+                        scheme සහිතව අංගසම්පූර්ණව සාකච්ඡා කිරීම. <br>
+                        සෑම ළමයෙකුටම තම ල්කුණට අදාළ rank එකක් ලබාදීම.</p>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+        <div class="sticky-bottom position-sticky sticky-bottom col-12">
+            <button class="btn btn-outline-warning rounded-5 pb-2 goUp toTopButton offset-11"
+                style="margin-bottom: -8vh;" id="toTopButton" data-toggle="tooltip" title="Go to Top"
+                style="z-index: 10;" onclick="scrollToTop();"><i class="fas fa-chevron-up"></i>
+            </button>
+        </div>
+
+    </div>
+
+
+    <!-- body ends -->
+    <script>
+
+
+    </script>
+    <!-- sweetelart -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- particles -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./js/particles.js"></script>
+
+    <!-- jquery -->
+    <script src="./js/jquery.min.js"></script>
+
+    <!-- owl carousel -->
+    <script src="./js/owl.carousel.js"></script>
+
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="./js/bootstrap.bundle.js"></script>
+
+    <!-- local scripts -->
+    <script src="./js/script.js"></script>
+    <script src="./js/gsap.js"></script>
+    <script src="./js/homeJS.js"></script>
+
+
+</body>
+
+</html>
