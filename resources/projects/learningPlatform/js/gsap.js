@@ -11,6 +11,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
     var homeSect2StaggerText = document.querySelectorAll(".homeSecStagger");
     var scaleOnHover = document.querySelectorAll(".scaleOnHover");
     console.log(navHeight);
+    
+    document.getElementById("preloader").classList.toggle("d-none");
+    document.getElementById("body").classList.toggle("d-none");
+
     gsap.fromTo(
       text,
       {
