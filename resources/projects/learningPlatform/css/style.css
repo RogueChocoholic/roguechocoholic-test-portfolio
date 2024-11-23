@@ -1,7 +1,7 @@
-
-:root{
+:root {
   color-scheme: light;
 }
+
 .body {
   font-family: "Outfit", sans-serif;
   /* background-color: rgb(61,61,61); */
@@ -240,7 +240,7 @@ canvas {
 
 /* glow on hover */
 .glow-on-hover {
-  
+
   border: none;
   outline: none;
 
@@ -312,7 +312,8 @@ canvas {
 
 .dnabg {
   position: relative;
-  z-index: 0; /* Ensure this element is a stacking context */
+  z-index: 0;
+  /* Ensure this element is a stacking context */
   /* Any other styles for your content */
 }
 
@@ -326,8 +327,56 @@ canvas {
   background-image: url(../resources/home/animatedComponents/dna.webp);
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: 0.01; /* Adjust this value for desired opacity */
-  z-index: -1; /* Place it behind the content */
-  pointer-events: none; /* Ensures the background doesn't block interactions */
+  opacity: 0.01;
+  /* Adjust this value for desired opacity */
+  z-index: -1;
+  /* Place it behind the content */
+  pointer-events: none;
+  /* Ensures the background doesn't block interactions */
 }
 
+.rankNames {
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.rankNumber {
+  font-size: 50px;
+}
+
+.rankIndexNo {
+  font-size: small;
+}
+
+.rankDistrict {
+  font-size: 25px;
+}
+
+
+@media (max-width:759px) {
+  .rankNames {
+    font-size: 15px;
+
+  }
+  .rankDistrict {
+    font-size: 20px;
+  }
+}
+
+@media (max-width:450px) {
+  .rankNames {
+    font-size: 15px;
+  }
+
+  .rankNumber {
+    font-size: 35px;
+  }
+
+  .rankIndexNo {
+    display: none;
+  }
+
+  .rankDistrict {
+    font-size: 18px;
+  }
+}

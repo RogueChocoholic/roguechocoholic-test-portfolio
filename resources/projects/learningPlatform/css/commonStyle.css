@@ -44,7 +44,7 @@
 
 .vecupeksha_font {
     font-family: "vecupeksha";
-    font-size: 4vmax;
+    /* font-size: 4vmax; */
     color: navy;
     /* font-size: 1vwmin; */
 }
