@@ -248,7 +248,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       trigger: ".fadeInGallery",
       start: "100 300",
       end: "top bottom",
-      markers: true,
+      // markers: true,
       toggleActions: "play none none none",
     });
 
