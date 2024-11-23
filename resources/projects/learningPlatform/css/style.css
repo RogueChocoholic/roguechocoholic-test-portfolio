@@ -353,12 +353,17 @@ canvas {
 }
 
 
+
 @media (max-width:759px) {
   .rankNames {
     font-size: 15px;
 
   }
+
   .rankDistrict {
+    font-size: 20px;
+  }
+  .resultPercentTxt {
     font-size: 20px;
   }
 }
@@ -379,4 +384,13 @@ canvas {
   .rankDistrict {
     font-size: 18px;
   }
+
+  .resultPercentTxt {
+    font-size: 18px;
+  }
+  
+.aboutTxtSize{
+  font-size: 14px;
+}
+
 }

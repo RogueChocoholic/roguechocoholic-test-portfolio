@@ -229,19 +229,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       opacity: 0,
       duration: 1,
     });
-    var resultsTrigger = ScrollTrigger.create({
-      trigger: ".fadeInResults",
-      start: "100 300",
-      end: "top bottom",
-      // markers: true,
-      toggleActions: "play none none none",
-    });
-
-    gsap.from(".fadeInResults", {
-      scrollTrigger: resultsTrigger,
-      opacity: 0,
-      duration: 1.5,
-    });
+    
 
     var telegramTrigger = ScrollTrigger.create({
       trigger: ".fadeInTelegram",
@@ -260,7 +248,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       trigger: ".fadeInGallery",
       start: "100 300",
       end: "top bottom",
-      // markers: true,
+      markers: true,
       toggleActions: "play none none none",
     });
 
