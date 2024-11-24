@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PJ BIO | Student Login</title>
+    <link rel="icon" href="./resources/logo1@300x.png">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/commonStyle.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <style>
+        @media(max-width:991px) {
+
+            .imgSection {
+                display: none;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-0 col-lg-6 h-100 imgSection"
+                style="background-image: linear-gradient(to right top, #051937, #00194c, #00185f, #001271, #000080);">
+
+                <div style="height: 95dvh;" class="d-flex justify-content-center align-items-center flex-column">
+                    <img src="./resources/logo1@300x.png" class="col-4" alt="">
+                    <h4 class="bindumathi_font pt-4  text-light">Ôj úoHdfõ ;d¾lsl újrKh</h4>
+                </div>
+
+            </div>
+
+            <div class="col-lg-6 d-flex justify-content-center align-items-center dnabg"
+                style="height: 95dvh;background-color: #f5f6fd; user-select: none;">
+
+                <!-- login start -->
+                <div class="row col-sm-10 p-5 glassContainer " style="background-color: #f5f6fd;" id="loginContainer">
+
+                    <h3 class="py-3 text-start offset-1 col-6">Login</h3>
+                    <div class="col-5 text-end">
+                        <a class="btn" data-toggle="tooltip" title="Show/Hide Password" onclick="showHidePW('login');">
+
+                            <img src="./resources/home/animatedComponents/eye.webp" height="60" alt="">
+                        </a>
+                    </div>
+                    <div class="wrap-input-2  col-10 offset-1">
+                        <input type="text" name="Email" placeholder="Email" id="loginEmail" class="input text-center">
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="wrap-input-2  col-10 offset-1">
+                        <input type="password" name="Password" placeholder="Password" id="loginPassword"
+                            class="input text-center">
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="col-12 text-center" style="margin-top: -40px;">
+                        <span id="loginErrorMsg" class="form-text ">
+                            Click the eye to view password.
+                        </span>
+                    </div>
+
+                    <div class="d-flex justify-content-center align-items-center flex-column pb-2">
+                        <div class="form-check ">
+                            <input class="form-check-input" type="checkbox" value="" id="rememberMe">
+                            <label class="form-check-label " for="rememberMe">
+                                <small>Remember Me</small>
+                            </label>
+                        </div>
+
+                        <a href="" class="text-decoration-none"><small>Forgot Password?</small></a>
+                        <button class=" btn-outline-navy mt-3 rounded-5 col-md-6 col-8 col-sm-6
+                        col-lg-6 col-xl-4">Login</button>
+                        <small> <span>Don't have an account?</span> &nbsp;<a class="text-decoration-none"
+                                style="cursor: pointer;" onclick="toggleLogin();">Register
+                                Now!</a></small>
+                    </div>
+
+                </div>
+                <!-- login end -->
+                <!-- signup start -->
+                <div class="row col-sm-10 p-5 glassContainer d-none" style="background-color: #f5f6fd;"
+                    id="signupContainer">
+                    <h3 class="py-3 text-start offset-1 col-6">Sign Up</h3>
+                    <div class="col-5 text-end">
+                        <a class="btn" data-toggle="tooltip" title="Show/Hide Password" onclick="showHidePW('signup');">
+
+                            <img src="./resources/home/animatedComponents/eye.webp" height="60" alt="">
+                        </a>
+                    </div>
+                    <div class="wrap-input-2 col-10 offset-1">
+                        <input type="text" name="Email" placeholder="Email" id="signupEmail" class="input text-center">
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="col-12 text-center" style="margin-top: -40px;">
+                        <span id="signUpErrorMsg" class="form-text ">
+                            Click the eye to view password.
+                        </span>
+                    </div>
+                    <div class="wrap-input-2 col-xl-5 col-10 offset-1">
+                        <input type="password" name="Password" placeholder="Password" id="signupPassword"
+                            class="input text-center">
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="wrap-input-2 col-xl-5   offset-1 offset-xl-0   col-10">
+                        <input type="password" name="Password" placeholder="Password" id="retypPassword"
+                            class="input text-center">
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="wrap-input-2 col-xl-5 col-10 offset-1">
+                        <input type="text" name="FirstName" placeholder="First Name" id="fname"
+                            class="input text-center">
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="wrap-input-2 col-xl-5   offset-1 offset-xl-0   col-10">
+                        <input type="text" name="LastName" placeholder="Last Name" id="lname"
+                            class="input text-center">
+                        <span class="focus-border"></span>
+                    </div>
+
+                    <div class="d-flex justify-content-center align-items-center flex-column pb-2">
+                        <button class=" btn-outline-navy mt-3 rounded-5 col-md-6 col-8 col-sm-6
+                         col-lg-6 col-xl-4">Sign Up</button>
+                        <small> <span>Already have an account?</span> &nbsp;<a class="text-decoration-none"
+                                style="cursor: pointer;" onclick="toggleLogin();">Log
+                                In</a></small>
+                    </div>
+
+                </div>
+                <!-- signup end -->
+
+            </div>
+        </div>
+        <footer style="height: 5dvh;">
+            <h6 class="text-center col-auto fw-light p-2"><small>&copy; 2025 RogueChocoholic</small></h6>
+        </footer>
+    </div>
+
+    <!-- bootstrap -->
+    <script src="./js/bootstrap.bundle.js"></script>
+    <!-- jquery -->
+    <script src="./js/jquery.min.js"></script>
+    <!-- sweetelart -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- local -->
+    <script src="./js/script.js"></script>
+
+    <script>
+        function showHidePW(container) {
+            if (container == "login") {
+                var pwField = document.getElementById("loginPassword");
+                if (pwField.type == "password") {
+                    pwField.type = "text";
+                } else {
+                    pwField.type = "password";
+                }
+
+            } else if (container == "signup") {
+                var pwField = document.getElementById("signupPassword");
+                var repwField = document.getElementById("retypPassword");
+
+                if (pwField.type == "password") {
+                    pwField.type = "text";
+                    repwField.type = "text";
+                } else {
+                    pwField.type = "password";
+                    repwField.type = "password";
+                }
+
+            }
+        }
+
+        function toggleLogin() {
+            var signUp = document.getElementById("signupContainer");
+            var login = document.getElementById("loginContainer");
+
+            login.classList.toggle("d-none");
+            signUp.classList.toggle("d-none");
+        }
+    </script>
+</body>
+
+</html>

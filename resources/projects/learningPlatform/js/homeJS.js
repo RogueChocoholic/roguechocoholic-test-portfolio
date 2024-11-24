@@ -1,18 +1,3 @@
-$(document).ready(function () {
-  $(".owl-carousel").owlCarousel({
-    loop: true,
-    items: 3,
-    margin: 10,
-    dots: false,
-    autoplay: true,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: true,
-    smartSpeed: 250,
-    dots:true
- 
-  });
-});
-
 // Add touch and mouse wheel event listener
 const handleScroll = (event) => {
   // Determine the current scroll position
@@ -50,32 +35,3 @@ function scrollToSection() {
 function scrollToTop() {
   document.getElementById("homeSection").scrollIntoView({ behavior: "smooth" });
 }
-
-// // Handle touch event for touchpads
-// const handleTouch = (event) => {
-//   const touch = event.touches[0];
-//   const startY = touch.clientY;
-
-//   const moveHandler = (moveEvent) => {
-//     const deltaY = startY - moveEvent.touches[0].clientY;
-
-//     if (deltaY > 0) {
-//       // Scroll down
-//       handleScroll({ deltaY: 1, preventDefault: () => {} }); // Mock preventDefault
-//     } else if (deltaY < 0) {
-//       // Scroll up
-//       handleScroll({ deltaY: -1, preventDefault: () => {} }); // Mock preventDefault
-//     }
-
-//     // Remove touch move listener
-//     window.removeEventListener("touchmove", moveHandler);
-//   };
-
-//   // Add touch move listener
-//   window.addEventListener("touchmove", moveHandler, { passive: false });
-// };
-
-// // Add the event listeners with non-passive option
-// window.addEventListener("wheel", handleScroll, { passive: false });
-// window.addEventListener("touchstart", handleTouch);
-

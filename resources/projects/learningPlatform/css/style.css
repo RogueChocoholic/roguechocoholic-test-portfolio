@@ -143,6 +143,52 @@ section {
   --bs-gradient: none;
 }
 
+/* Solid Navy Button */
+.btn-navy {
+  color: #fff;
+  /* White text */
+  background-color: #001f3f;
+  /* Navy background */
+  border: 1px solid #001f3f;
+  /* Navy border */
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s, border-color 0.3s;
+  /* Smooth transition */
+}
+
+.btn-navy:hover {
+  background-color: #003366;
+  /* Darker navy on hover */
+  border-color: #003366;
+  /* Darker navy border on hover */
+}
+
+/* Outline Navy Button */
+.btn-outline-navy {
+  color: #001f3f;
+  /* Navy text */
+  background-color: transparent;
+  /* Transparent background */
+  border: 1px solid #001f3f;
+  /* Navy border */
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+  /* Smooth transition */
+}
+
+.btn-outline-navy:hover {
+  color: #fff;
+  /* White text on hover */
+  background-color: #001f3f;
+  /* Navy background on hover */
+  border-color: #001f3f;
+  /* Navy border on hover */
+}
+
 
 
 /* particles  */
@@ -353,6 +399,62 @@ canvas {
 }
 
 
+/* text field effects */
+.wrap-input-2 .input:focus {
+  outline: none;
+}
+
+.wrap-input-2 {
+  width: 80%;
+  margin: 40px 3%;
+  position: relative;
+}
+
+.wrap-input-2 .input {
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  background-color:
+    #f5f6fd;
+}
+
+.wrap-input-2 .input {
+  border: 0;
+  padding: 7px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.wrap-input-2 .input~.focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color:
+    #6c5dd3;
+  transition: 0.4s;
+}
+
+.wrap-input-2 .input:focus~.focus-border {
+  width: 100%;
+  transition: 0.4s;
+  left: 0;
+}
+
+/* text field effects */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width:759px) {
   .rankNames {
@@ -363,6 +465,7 @@ canvas {
   .rankDistrict {
     font-size: 20px;
   }
+
   .resultPercentTxt {
     font-size: 20px;
   }
@@ -388,9 +491,9 @@ canvas {
   .resultPercentTxt {
     font-size: 18px;
   }
-  
-.aboutTxtSize{
-  font-size: 14px;
-}
+
+  .aboutTxtSize {
+    font-size: 14px;
+  }
 
 }
