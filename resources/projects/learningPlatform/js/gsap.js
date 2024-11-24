@@ -280,6 +280,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
     // scale on hover
   };
 
+
+          
+window.addEventListener("focus",()=>{
+  ScrollTrigger.refresh();
+})
+window.addEventListener("resize",()=>{
+  ScrollTrigger.refresh();
+})
+ScrollTrigger.normalizeScroll(true);
   // var box = document.querySelector(".box");
   // box.addEventListener("click", () => {
   //   gsap.to(box, {
