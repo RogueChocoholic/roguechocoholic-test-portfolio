@@ -288,6 +288,7 @@ window.addEventListener("focus",()=>{
 window.addEventListener("resize",()=>{
   ScrollTrigger.refresh();
 })
+// ScrollTrigger.normalizeScroll(true);
   // var box = document.querySelector(".box");
   // box.addEventListener("click", () => {
   //   gsap.to(box, {
