@@ -40,7 +40,7 @@
                 style="background-image: linear-gradient(to right top, #051937, #00194c, #00185f, #001271, #000080);">
 
                 <div style="height: 97dvh;" class="d-flex justify-content-center align-items-center flex-column">
-                    <img src="./resources/logoWhite.webp" class="col-4" alt="" onclick="goToHome();">
+                    <img src="./resources/logoWhite.webp" class="col-4" style="cursor: pointer;" alt="" onclick="goToHome();">
                     <!-- <h4 class="bindumathi_font pt-4  text-light">Ôj úoHdfõ ;d¾lsl újrKh</h4> -->
                 </div>
 
@@ -52,7 +52,7 @@
                 <!-- login start -->
                 <div class="row col-sm-10 p-5 glassContainer " style="background-color: #f5f6fd;" id="loginContainer">
 
-                    <h3 class="py-3 text-start offset-1 col-6">Login</h3>
+                    <h3 class="py-3 text-start offset-1 col-6"><a href="./index.html" class="text-decoration-none">Login</a></h3>
                     <div class="col-5 text-end">
                         <a class="btn" data-toggle="tooltip" title="Show/Hide Password" onclick="showHidePW('login');">
 
@@ -96,7 +96,7 @@
                 <!-- signup start -->
                 <div class="row col-sm-10 p-5 glassContainer d-none" style="background-color: #f5f6fd;"
                     id="signupContainer">
-                    <h3 class="py-3 text-start offset-1 col-6">Sign Up</h3>
+                    <h3 class="py-3 text-start offset-1 col-6"><a href="./index.html" class="text-decoration-none">Sign Up</a></h3>
                     <div class="col-5 text-end">
                         <a class="btn" data-toggle="tooltip" title="Show/Hide Password" onclick="showHidePW('signup');">
 
@@ -116,19 +116,22 @@
                     </div>
                     <div class="wrap-input-2 col-xl-5 col-10 offset-1">
                         <input type="password" name="Password" placeholder="Password" id="signupPassword"
-                            class="input text-center fillText">
+                            onblur="verifyPwFE(this.id,1);" data-toggle="tooltip"
+                            title="Password must contain at least one of the following; (A-Z), (a-z), (0-9), (@,#,$)."
+                            data-bs-toggle="collapse" href="#collapsePwNotification" role="button" aria-expanded="false"
+                            aria-controls="collapsePwNotification" class="input text-center fillText">
                         <span class="focus-border"></span>
                     </div>
                     <div class="wrap-input-2 col-xl-5   offset-1 offset-xl-0   col-10">
-                        <input type="password" name="Password" placeholder="Password" id="retypPassword"
-                            class="input text-center fillText">
+                        <input type="password" name="Password" placeholder="Retype Password" id="retypPassword"
+                            oninput="verifyPwFE(this.id,2);" class="input text-center fillText">
                         <span class="focus-border"></span>
                     </div>
 
                     <!-- pw error msg -->
-                    <div class="col-12 text-center visually-hidden" style="margin-top: -40px;">
-                        <span id="signUpErrorMsg" class="form-text ">
-                            Passwords have no errors.
+                    <div class="col-12 text-center collapse" style="margin-top: -40px;" id="collapsePwNotification">
+                        <span id="pwErrorMsg" class="form-text ">
+                            Password must contain at least one of the following; (A-Z), (a-z), (0-9), (@,#,$).
                         </span>
                     </div>
                     <div class="wrap-input-2 col-xl-5 col-10 offset-1">
@@ -143,7 +146,7 @@
                     </div>
                     <!-- name error msg -->
                     <div class="col-12 text-center visually-hidden" style="margin-top: -40px;">
-                        <span id="signUpErrorMsg" class="form-text ">
+                        <span id="nameErrorMsg" class="form-text ">
                             Name has no errors.
                         </span>
                     </div>
@@ -179,6 +182,71 @@
     <script src="./js/common.js"></script>
 
     <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const signUpPasswordField = document.getElementById("signupPassword");
+            const retypePasswordField = document.getElementById("retypPassword");
+            const fNameField = document.getElementById("fname");
+            const lNameField = document.getElementById("lname");
+
+            // Regex for allowed characters
+            const allowedpwCharactersRegex = /^[a-zA-Z0-9@#$]*$/;
+            const nameAllowedCharacters = /[^a-zA-Z]/g;
+
+            signUpPasswordField.addEventListener("input", () => {
+                // Sanitize input: remove disallowed characters
+                const sanitizedValue = signUpPasswordField.value
+                    .split("")
+                    .filter((char) => allowedpwCharactersRegex.test(char))
+                    .join("");
+
+                // Update the input field with the sanitized value
+                if (signUpPasswordField.value !== sanitizedValue) {
+                    signUpPasswordField.value = sanitizedValue;
+                }
+            });
+            retypePasswordField.addEventListener("input", () => {
+                // Sanitize input: remove disallowed characters
+                const sanitizedValue = retypePasswordField.value
+                    .split("")
+                    .filter((char) => allowedpwCharactersRegex.test(char))
+                    .join("");
+
+                // Update the input field with the sanitized value
+                if (retypePasswordField.value !== sanitizedValue) {
+                    retypePasswordField.value = sanitizedValue;
+                }
+            });
+
+
+
+            fNameField.addEventListener("input", () => {
+                // Remove any non-alphabetic characters
+                let sanitizedValue = fNameField.value.replace(nameAllowedCharacters, "");
+
+                // Convert the first letter to uppercase and the rest to lowercase
+                if (sanitizedValue.length > 0) {
+                    sanitizedValue =
+                        sanitizedValue.charAt(0).toUpperCase() + sanitizedValue.slice(1).toLowerCase();
+                }
+
+                // Update the input field with the sanitized value
+                fNameField.value = sanitizedValue;
+            });
+            lNameField.addEventListener("input", () => {
+                // Remove any non-alphabetic characters
+                let sanitizedValue = lNameField.value.replace(nameAllowedCharacters, "");
+
+                // Convert the first letter to uppercase and the rest to lowercase
+                if (sanitizedValue.length > 0) {
+                    sanitizedValue =
+                        sanitizedValue.charAt(0).toUpperCase() + sanitizedValue.slice(1).toLowerCase();
+                }
+
+                // Update the input field with the sanitized value
+                lNameField.value = sanitizedValue;
+            });
+        });
+
         function showHidePW(container) {
             if (container == "login") {
                 var pwField = document.getElementById("loginPassword");
