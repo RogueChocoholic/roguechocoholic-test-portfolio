@@ -20,6 +20,7 @@
 
             }
         }
+
         @media(max-width:576px) {
 
             .fillText {
@@ -38,7 +39,7 @@
             <div class="col-0 col-lg-6 h-100 imgSection"
                 style="background-image: linear-gradient(to right top, #051937, #00194c, #00185f, #001271, #000080);">
 
-                <div style="height: 95dvh;" class="d-flex justify-content-center align-items-center flex-column">
+                <div style="height: 97dvh;" class="d-flex justify-content-center align-items-center flex-column">
                     <img src="./resources/logoWhite.webp" class="col-4" alt="" onclick="goToHome();">
                     <!-- <h4 class="bindumathi_font pt-4  text-light">Ôj úoHdfõ ;d¾lsl újrKh</h4> -->
                 </div>
@@ -46,7 +47,7 @@
             </div>
 
             <div class="col-lg-6 d-flex justify-content-center align-items-center dnabg"
-                style="height: 95dvh;background-color: #f5f6fd; user-select: none;">
+                style="height: 97dvh;background-color: #f5f6fd; user-select: none;">
 
                 <!-- login start -->
                 <div class="row col-sm-10 p-5 glassContainer " style="background-color: #f5f6fd;" id="loginContainer">
@@ -59,7 +60,8 @@
                         </a>
                     </div>
                     <div class="wrap-input-2  col-10 offset-1">
-                        <input type="text" name="Email" placeholder="Email" id="loginEmail" class="input text-center fillText">
+                        <input type="text" name="Email" placeholder="Email" id="loginEmail"
+                            onblur="verifyEmailFE(this.id,1);" class="input text-center fillText">
                         <span class="focus-border"></span>
                     </div>
                     <div class="wrap-input-2  col-10 offset-1">
@@ -102,9 +104,11 @@
                         </a>
                     </div>
                     <div class="wrap-input-2 col-10 offset-1">
-                        <input type="text" name="Email" placeholder="Email" id="signupEmail" class="input text-center fillText">
+                        <input type="text" name="Email" placeholder="Email" id="signupEmail"
+                            class="input text-center fillText" onblur="verifyEmailFE(this.id,2);">
                         <span class="focus-border"></span>
                     </div>
+                    <!-- email error msg -->
                     <div class="col-12 text-center" style="margin-top: -40px;">
                         <span id="signUpErrorMsg" class="form-text ">
                             Click the eye to view password.
@@ -120,16 +124,29 @@
                             class="input text-center fillText">
                         <span class="focus-border"></span>
                     </div>
+
+                    <!-- pw error msg -->
+                    <div class="col-12 text-center visually-hidden" style="margin-top: -40px;">
+                        <span id="signUpErrorMsg" class="form-text ">
+                            Passwords have no errors.
+                        </span>
+                    </div>
                     <div class="wrap-input-2 col-xl-5 col-10 offset-1">
                         <input type="text" name="FirstName" placeholder="First Name" id="fname"
                             class="input text-center fillText">
                         <span class="focus-border"></span>
                     </div>
                     <div class="wrap-input-2 col-xl-5   offset-1 offset-xl-0   col-10">
-                        <input type="text" name="LastName fillText" placeholder="Last Name" id="lname" class="input text-center">
+                        <input type="text" name="LastName fillText" placeholder="Last Name" id="lname"
+                            class="input text-center">
                         <span class="focus-border"></span>
                     </div>
-
+                    <!-- name error msg -->
+                    <div class="col-12 text-center visually-hidden" style="margin-top: -40px;">
+                        <span id="signUpErrorMsg" class="form-text ">
+                            Name has no errors.
+                        </span>
+                    </div>
                     <div class="d-flex justify-content-center align-items-center flex-column pb-2">
                         <button class=" btn-outline-navy mt-3 rounded-5 col-md-6 col-8 col-sm-6
                          col-lg-6 col-xl-4">Sign Up</button>
@@ -143,8 +160,9 @@
 
             </div>
         </div>
-        <footer style="height: 5dvh;">
-            <h6 class="text-center col-auto fw-light p-2"><a href="https://t.me/RogueChocoholic" target="_blank" class="text-decoration-none"><small>&copy; 2025
+        <footer style="height: 3dvh;">
+            <h6 class="text-center col-auto fw-light p-1"><a href="https://t.me/RogueChocoholic" target="_blank"
+                    class="text-decoration-none"><small>&copy; 2025
                         RogueChocoholic</small></a></h6>
         </footer>
     </div>
@@ -158,6 +176,7 @@
 
     <!-- local -->
     <script src="./js/script.js"></script>
+    <script src="./js/common.js"></script>
 
     <script>
         function showHidePW(container) {
@@ -192,8 +211,8 @@
             signUp.classList.toggle("d-none");
         }
 
-        function goToHome(){
-            window.location.href= "./index.html";
+        function goToHome() {
+            window.location.href = "./index.html";
         }
     </script>
 </body>
