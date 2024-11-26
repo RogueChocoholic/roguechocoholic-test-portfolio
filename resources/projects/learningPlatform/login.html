@@ -13,6 +13,9 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="./css/bootstrap.css">
     <style>
+        .footersize{
+                font-size: 14px;
+            }
         @media(max-width:991px) {
 
             .imgSection {
@@ -26,6 +29,9 @@
             .fillText {
                 font-size: 13px;
 
+            }
+            .footersize{
+                font-size: 10px;
             }
         }
     </style>
@@ -165,7 +171,7 @@
         </div>
         <footer style="height: 3dvh;">
             <h6 class="text-center col-auto fw-light p-1"><a href="https://t.me/RogueChocoholic" target="_blank"
-                    class="text-decoration-none"><small>&copy; 2025
+                    class="text-decoration-none text-secondary footersize" ><small>&copy; 2025
                         RogueChocoholic</small></a></h6>
         </footer>
     </div>
@@ -185,6 +191,7 @@
         document.addEventListener("DOMContentLoaded", () => {
             const signUpPasswordField = document.getElementById("signupPassword");
             const retypePasswordField = document.getElementById("retypPassword");
+            const loginPasswordField = document.getElementById("loginPassword");
             const fNameField = document.getElementById("fname");
             const lNameField = document.getElementById("lname");
 
@@ -202,6 +209,18 @@
                 // Update the input field with the sanitized value
                 if (signUpPasswordField.value !== sanitizedValue) {
                     signUpPasswordField.value = sanitizedValue;
+                }
+            });
+            loginPasswordField.addEventListener("input", () => {
+                // Sanitize input: remove disallowed characters
+                const sanitizedValue = loginPasswordField.value
+                    .split("")
+                    .filter((char) => allowedpwCharactersRegex.test(char))
+                    .join("");
+
+                // Update the input field with the sanitized value
+                if (loginPasswordField.value !== sanitizedValue) {
+                    loginPasswordField.value = sanitizedValue;
                 }
             });
             retypePasswordField.addEventListener("input", () => {
