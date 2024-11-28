@@ -10,8 +10,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     var ourProcesses = document.querySelectorAll(".ourProcesses");
     var homeSect2StaggerText = document.querySelectorAll(".homeSecStagger");
     var scaleOnHover = document.querySelectorAll(".scaleOnHover");
-    console.log(navHeight);
-
+   
     document.getElementById("preloader").classList.toggle("d-none");
     document.getElementById("body").classList.toggle("d-none");
 
@@ -31,21 +30,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
         stagger: 0.5,
       }
     );
-    gsap.fromTo(
-      ".heroGif",
-      {
-        y: -30,
-        opacity: 0,
-        ease: "bounce",
-      },
-      {
-        y: 0,
-        opacity: 0.1,
-        ease: "power1.out",
-        duration: 2,
-        delay: 1,
-      }
-    );
+    // gsap.fromTo(
+    //   ".heroGif",
+    //   {
+    //     y: -30,
+    //     opacity: 0,
+    //     ease: "bounce",
+    //   },
+    //   {
+    //     y: 0,
+    //     opacity: 0.1,
+    //     ease: "power1.out",
+    //     duration: 2,
+    //     delay: 1,
+    //   }
+    // );
 
     gsap.fromTo(
       goUpBtn,

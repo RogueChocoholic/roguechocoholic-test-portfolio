@@ -27,19 +27,19 @@
         <img src="./resources/home/animatedComponents/dna.webp" height="100" loading="lazy" alt="">
     </div>
     <div class="container-fluid body d-none" style="padding: 0px;" id="body">
-        <div class="">
+        <!-- <div class="">
             <img src="./resources/home/animatedComponents/training.webp"
                 class="position-absolute col-lg-4 col-sm-6 col-12 heroGif"
                 style="margin-top: 10vh;z-index: 1; opacity: 0.2;margin-left: -10vw;" alt="">
-        </div>
+        </div> -->
         <!-- hero -->
-        <nav class="navbar position-relative navbar-expand-lg blurBackDrop mt-3 mx-5 px-lg-5 px-3 subtext" style="z-index: 1;"
+        <nav class="navbar position-relative navbar-expand-lg px-3 subtext" style="z-index: 1;"
             id="topNav">
 
             <div class="container ">
 
                 <a class="navbar-brand" href="#">
-                    <img src="./resources/logo.svg" alt="Logo" width="42.38" height="60"
+                    <img src="./resources/logo.svg" alt="Logo" width="60" height="60"
                         class="d-inline-block align-text-top">
 
                 </a>
@@ -95,10 +95,11 @@
                 </div>
             </div>
         </nav>
-        <section class="homeSection d-flex flex-column align-items-center" id="homeSection">
+        <section class="homeSection d-flex flex-column align-items-center" id="homeSection" >
 
-            <div style="height: 80vh;background-color: white;"
+            <div style="height: 80vh;"
                 class="d-flex justify-content-center align-items-center flex-column">
+                <!-- <div id="particles-js" class="position-absolute col-10" style="z-index: -2;"></div> -->
 
                 <img src="./resources/home/heroIMG.webp" class="col-8 col-sm-10 col-md-8 subtext" alt="">
                 <span class="bindumathi_font pt-4 fs-3 text-center col-10 subtext">Ôj úoHdfõ ;d¾lsl újrKh
@@ -112,15 +113,38 @@
 
 
         </section>
+         <!-- <section class="homeSection d-flex flex-column align-items-center" id="homeSection">
+
+            <div style="height: 80vh;background-color: white;"
+                class="row justify-content-center align-items-center ">
+                <div class="col-md-4 col-6 offset-md-0 ">
+                    <img src="./resources/logoBlack.svg" class="col-6 offset-3" alt="">
+                </div>
+                <div class="col-md-8 col-12 d-flex justify-content-center align-items-center flex-column">
+                    <img src="./resources/home/heroIMG.webp" class="col-8 col-sm-10 col-md-8 subtext" alt="">
+                    <span class="bindumathi_font pt-4 fs-3 text-center col-10 subtext">Ôj úoHdfõ ;d¾lsl újrKh
+                    </span>
+
+                    <a class="btn btn-dark btn-sm rounded-5 my-5 px-5 subtext" href="./login.html">Student Portal</a>
+
+                </div>
+            </div>
+            <button class="btn btn-warning sticky-bottom rounded-5 pb-2 mb-5 goUpBtn" style="z-index: 200;bottom: 30px;"
+                onclick="scrollToSection();"><i class="fas fa-chevron-down"></i>
+            </button>
+
+
+        </section> -->
         <!-- <section class="position-sticky sticky-top homeSection2" style="background-image: url(./resources/home/topography\ BG.svg);background-size: cover;" id="homeSection2"> -->
         <div class="sticky-top mx-5 px-md-5">
-            <nav class="navbar navbar-expand-lg blurBackDrop  rounded-5 mt-2 " id="navNiew">
-                <div id="particles-js" class="position-absolute col-10" style="z-index: -2;"></div>
+           
 
+            <nav class="navbar navbar-expand-lg blurBackDrop  rounded-5 mt-2 " id="navNiew">
+               <div id="particles-js" class="position-absolute col-10" style="z-index: -2;"></div>
                 <div class="container">
                     <!-- <a class="navbar-brand" href="#">Navbar</a> -->
                     <a class="navbar-brand" href="#">
-                        <img src="./resources/logo.svg" alt="Logo" width="60" height="60"
+                        <img src="./resources/logo.svg" alt="Logo" width="50" height="50"
                             class="d-inline-block align-text-top">
 
                     </a>
@@ -167,8 +191,8 @@
                         </ul>
                         <a class="btn btn-sm btn-outline-gold rounded-2 px-3 m-2" href="./login.html"
                             onclick="clickedSignup();">Student Portal</a>
-                        <button class="btn btn-sm btn-gold rounded-2 px-3 m-2"
-                            onclick="showLoginAlert();">Login</button>
+                        <!-- <button class="btn btn-sm btn-gold rounded-2 px-3 m-2"
+                            onclick="showLoginAlert();">Login</button> -->
                         <a class="btn btn-sm btn-gold m-2 px-3 py-1 rounded-start-5 position-relative"><i
                                 class="fas fa-user-alt"> </i><span
                                 class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
@@ -592,7 +616,7 @@
             <div class="row p-5" style="width: 100dvw;">
 
                 <div class="offset-lg-1 col-lg-4 col-md-6  col-12  py-4">
-                    <img src="./resources/logoWhite.webp" class="text-light" height="70" alt="">
+                    <img src="./resources/logoWhite.svg" class="text-light" height="70" alt="">
                     <h5 class="bindumathi_font pt-4  text-light">Ôj úoHdfõ ;d¾lsl újrKh</h5>
                     <h5 class="bindumathi_font text-light" style="padding: 0px;margin: 0px;">mjr chisxy</h5>
                     <span class="text-light fs-6 fw-lighter" style="padding: 0px;margin: 0px;">MBBS (UG) - University of
