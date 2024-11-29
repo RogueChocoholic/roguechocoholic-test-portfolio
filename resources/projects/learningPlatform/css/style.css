@@ -443,6 +443,9 @@ canvas {
 
 /* text field effects */
 
+.heroSectionTextSide{
+  height: 100%;
+}
 
 
 
@@ -476,25 +479,31 @@ canvas {
   .rankNames {
     font-size: 15px;
   }
-
+  
   .rankNumber {
     font-size: 35px;
   }
-
+  
   .rankIndexNo {
     display: none;
   }
-
+  
   .rankDistrict {
     font-size: 18px;
   }
-
+  
   .resultPercentTxt {
     font-size: 18px;
   }
-
+  
   .aboutTxtSize {
     font-size: 14px;
   }
+  
+}
 
+@media (max-width:992px) {
+  .heroSectionTextSide{
+    height: fit-content;
+  }
 }
