@@ -100,10 +100,34 @@ section {
 }
 
 
+.glassContainerDark {
+
+  background: rgba(70, 70, 70, 0.35);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.3px);
+  -webkit-backdrop-filter: blur(4.3px);
+  border: 1px solid rgba(61, 61, 61, 0.5);
+  z-index: 3;
+}
+
+
 
 .navbar-nav .nav-link:hover {
   color: #b8860b;
   /* Change this to your desired color */
+}
+
+.nav-link {
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: var(--bs-nav-link-font-weight);
+  color: #f5f6fd;
+  text-decoration: none;
+  background: none;
+  border: 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 
 .btn-gold {
@@ -368,7 +392,7 @@ canvas {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100dvh;
   height: 100%;
   background-image: url(../resources/home/animatedComponents/dna.webp);
   background-size: cover;
