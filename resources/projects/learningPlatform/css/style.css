@@ -5,7 +5,7 @@
 .body {
   font-family: "Outfit", sans-serif;
   /* background-color: rgb(61,61,61); */
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 
@@ -509,9 +509,9 @@ canvas {
     font-size: 35px;
   }
   
-  .rankIndexNo {
+  /* .rankIndexNo {
     display: none;
-  }
+  } */
   
   .rankDistrict {
     font-size: 18px;
