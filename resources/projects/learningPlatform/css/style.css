@@ -5,6 +5,7 @@
 .body {
   font-family: "Outfit", sans-serif;
   /* background-color: rgb(61,61,61); */
+  overflow-x: hidden;
 }
 
 

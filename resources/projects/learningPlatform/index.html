@@ -78,9 +78,9 @@
             <div class="owl-carousel owl-theme subtext" id="homeCarousel">
                 <div class="item">
                     <picture>
-                        <source media="(max-width: 600px)" srcset="./resources/home/carousel/1micro.jpg">
-                        <source media="(max-width: 1200px)" srcset="./resources/home/carousel/1mini.jpg">
-                        <img src="./resources/home/carousel/1.jpg" alt="Slide 1">
+                        <source media="(max-width: 600px)" srcset="./resources/home/carousel/1micro.webp">
+                        <source media="(max-width: 1200px)" srcset="./resources/home/carousel/1mini.webp">
+                        <img src="./resources/home/carousel/1.webp" alt="Slide 1">
                         <button class="btn btn-warning sticky-bottom rounded-5 pb-2 mb-5 goUpBtn"
                             style="z-index: 200;bottom: 30px;" onclick="scrollToSection();"><i
                                 class="fas fa-chevron-down"></i>
@@ -89,16 +89,16 @@
                 </div>
                 <div class="item">
                     <picture>
-                        <source media="(max-width: 600px)" srcset="./resources/home/carousel/1micro.jpg">
-                        <source media="(max-width: 1200px)" srcset="./resources/home/carousel/1mini.jpg">
-                        <img src="./resources/home/carousel/1.jpg" alt="Slide 2">
+                        <source media="(max-width: 600px)" srcset="./resources/home/carousel/3micro.webp">
+                        <source media="(max-width: 1200px)" srcset="./resources/home/carousel/3mini.webp">
+                        <img src="./resources/home/carousel/3.webp" alt="Slide 3">
                     </picture>
                 </div>
                 <div class="item">
                     <picture>
-                        <source media="(max-width: 600px)" srcset="./resources/home/carousel/1micro.jpg">
-                        <source media="(max-width: 1200px)" srcset="./resources/home/carousel/1mini.jpg">
-                        <img src="./resources/home/carousel/1.jpg" alt="Slide 3">
+                        <source media="(max-width: 600px)" srcset="./resources/home/carousel/2micro.webp">
+                        <source media="(max-width: 1200px)" srcset="./resources/home/carousel/2mini.webp">
+                        <img src="./resources/home/carousel/2.webp" alt="Slide 2">
                     </picture>
                 </div>
             </div>
@@ -301,7 +301,8 @@
                         <div class="row align-items-center justify-content-center gap-sm-3 mt-4">
                             <!-- Rank Block 1 -->
                             <div
-                                class="col-xl-5 col-lg-5 col-sm-4 col-5 m-1 rounded-5 glassContainer py-4 shadow glow-on-hover">
+                                class="col-xl-5 col-lg-5 col-sm-4 col-5 m-1 rounded-5 glassContainer py-4 shadow glow-on-hover rank-block">
+                                <div class="medicine-label">MEDICINE</div>
                                 <h5 class="bindumathi_font text-dark rankDistrict">l¿;r</h5>
                                 <h2 class="vecupeksha_font rankNumber" style="margin: -10px; color: navy;">9</h2>
                                 <h5 class="bindumathi_font rankNames" style="color: #b8860b;">ksfõoHd úfc.=Kj¾Ok</h5>
@@ -310,7 +311,8 @@
 
                             <!-- Rank Block 2 -->
                             <div
-                                class="col-xl-5 col-lg-5 col-sm-4 col-5 m-1 rounded-5 glassContainer py-4 shadow glow-on-hover">
+                                class="col-xl-5 col-lg-5 col-sm-4 col-5 m-1 rounded-5 glassContainer py-4 shadow glow-on-hover rank-block">
+                                <div class="medicine-label">MEDICINE</div>
                                 <h5 class="bindumathi_font text-dark rankDistrict">l¿;r</h5>
                                 <h2 class="vecupeksha_font rankNumber" style="margin: -10px; color: navy;">87</h2>
                                 <h5 class="bindumathi_font rankNames" style="color: #b8860b;">fiykahd ,shkf.a</h5>
@@ -319,7 +321,8 @@
 
                             <!-- Rank Block 3 -->
                             <div
-                                class="col-xl-5 col-lg-5 col-sm-4 col-5 m-1 rounded-5 glassContainer py-4 shadow glow-on-hover">
+                                class="col-xl-5 col-lg-5 col-sm-4 col-5 m-1 rounded-5 glassContainer py-4 shadow glow-on-hover rank-block">
+                                <div class="medicine-label">MEDICINE</div>
                                 <h5 class="bindumathi_font text-dark rankDistrict">l¿;r</h5>
                                 <h2 class="vecupeksha_font rankNumber" style="margin: -10px; color: navy;">101</h2>
                                 <h5 class="bindumathi_font rankNames" style="color: #b8860b;">pfudaoa lúYal</h5>
@@ -328,7 +331,8 @@
 
                             <!-- Rank Block 4 -->
                             <div
-                                class="col-xl-5 col-lg-5 col-sm-4 col-5 m-1 rounded-5 glassContainer py-4 shadow glow-on-hover">
+                                class="col-xl-5 col-lg-5 col-sm-4 col-5 m-1 rounded-5 glassContainer py-4 shadow glow-on-hover rank-block">
+                                <div class="medicine-label">MEDICINE</div>
                                 <h5 class="bindumathi_font text-dark rankDistrict">fld&lt;U</h5>
                                 <h2 class="vecupeksha_font rankNumber" style="margin: -10px; color: navy;">348</h2>
                                 <h5 class="bindumathi_font rankNames" style="color: #b8860b;">ßisl wurisxy</h5>
@@ -336,6 +340,144 @@
                             </div>
                         </div>
                     </div>
+
+                    <style>
+                        .rank-block {
+                            transition: transform 0.3s ease, box-shadow 0.3s ease;
+                            position: relative;
+                        }
+
+                        .rank-block:hover {
+                            transform: translateY(-10px);
+                            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+                        }
+
+                        .rankNumber {
+                            font-weight: bold;
+                            font-size: 3rem;
+                            transition: color 0.3s ease;
+                        }
+
+                        .rank-block:hover .rankNumber {
+                            color: #ff6347;
+                            /* Tomato color */
+                        }
+
+                        .rankDistrict {
+                            font-size: 1.2rem;
+                            color: #4b4b4b;
+                        }
+
+                        .rankNames {
+                            font-size: 1.1rem;
+                            color: #b8860b;
+                        }
+
+                        .rankIndexNo {
+                            font-size: 0.9rem;
+                            color: #555;
+                        }
+
+                        .glassContainer {
+                            background: rgba(255, 255, 255, 0.9);
+                            backdrop-filter: blur(10px);
+                        }
+
+                        /* New "MEDICINE" Label Styling */
+                        .medicine-label {
+                            font-size: 0.8rem;
+                            font-weight: bold;
+                            color: white;
+                            background-color: #007BFF;
+                            padding: 8px 12px;
+                            border-radius: 25px;
+                            position: absolute;
+                            top: -18px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            z-index: 10;
+                            text-transform: uppercase;
+                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                            transition: background-color 0.3s ease;
+                        }
+
+                        .medicine-label:hover {
+                            background-color: #0056b3;
+                            /* Darker blue on hover */
+                        }
+
+                        /* Animation for rank blocks */
+                        .rank-block {
+                            opacity: 0;
+                            animation: fadeIn 0.5s ease-in-out forwards;
+                        }
+
+                        .rank-block:nth-child(1) {
+                            animation-delay: 0s;
+                        }
+
+                        .rank-block:nth-child(2) {
+                            animation-delay: 0.1s;
+                        }
+
+                        .rank-block:nth-child(3) {
+                            animation-delay: 0.2s;
+                        }
+
+                        .rank-block:nth-child(4) {
+                            animation-delay: 0.3s;
+                        }
+
+                        @keyframes fadeIn {
+                            to {
+                                opacity: 1;
+                            }
+                        }
+                    </style>
+                    ෆ
+
+                    <!-- <div
+                        class="col-12 col-md-6 col-lg-5 text-center p-4 rounded-5 shadow-lg bg-white glassContainer mb-4 mt-md-0">
+                        <h3 class="homeSecStagger fs-4">
+                            <span class="bindumathi_font">msg msg fojk jrg;a lsisÿ &lt;ufhl= wiu;a fkdjQ ,xldfõ
+                                tlu</span>
+                            <span>Bio</span>
+                            <span class="bindumathi_font">mka;sh fuh fõ¡</span>
+                        </h3>
+                        <div class="row align-items-center justify-content-center gap-sm-3 mt-4">
+                            <div
+                                class="col-xl-5 col-lg-5 col-sm-4 col-5 m-1 rounded-5 glassContainer py-4 shadow glow-on-hover">
+                                <h5 class="bindumathi_font text-dark rankDistrict">l¿;r</h5>
+                                <h2 class="vecupeksha_font rankNumber" style="margin: -10px; color: navy;">9</h2>
+                                <h5 class="bindumathi_font rankNames" style="color: #b8860b;">ksfõoHd úfc.=Kj¾Ok</h5>
+                                <small class="rankIndexNo">Index No.6705367</small>
+                            </div>
+
+                            <div
+                                class="col-xl-5 col-lg-5 col-sm-4 col-5 m-1 rounded-5 glassContainer py-4 shadow glow-on-hover">
+                                <h5 class="bindumathi_font text-dark rankDistrict">l¿;r</h5>
+                                <h2 class="vecupeksha_font rankNumber" style="margin: -10px; color: navy;">87</h2>
+                                <h5 class="bindumathi_font rankNames" style="color: #b8860b;">fiykahd ,shkf.a</h5>
+                                <small class="rankIndexNo">Index No.6723470</small>
+                            </div>
+
+                            <div
+                                class="col-xl-5 col-lg-5 col-sm-4 col-5 m-1 rounded-5 glassContainer py-4 shadow glow-on-hover">
+                                <h5 class="bindumathi_font text-dark rankDistrict">l¿;r</h5>
+                                <h2 class="vecupeksha_font rankNumber" style="margin: -10px; color: navy;">101</h2>
+                                <h5 class="bindumathi_font rankNames" style="color: #b8860b;">pfudaoa lúYal</h5>
+                                <small class="rankIndexNo">Index No.6704794</small>
+                            </div>
+
+                            <div
+                                class="col-xl-5 col-lg-5 col-sm-4 col-5 m-1 rounded-5 glassContainer py-4 shadow glow-on-hover">
+                                <h5 class="bindumathi_font text-dark rankDistrict">fld&lt;U</h5>
+                                <h2 class="vecupeksha_font rankNumber" style="margin: -10px; color: navy;">348</h2>
+                                <h5 class="bindumathi_font rankNames" style="color: #b8860b;">ßisl wurisxy</h5>
+                                <small class="rankIndexNo">Index No.6020432</small>
+                            </div>
+                        </div>
+                    </div> -->
                     <!-- Left: Stats & Achievements -->
                     <div class="col-12 col-md-6 col-lg-5 text-center p-4 rounded-5 shadow-lg bg-white glassContainer">
                         <h1 class="bindumathi_font sectionTitle1" style="font-weight: bold;">
@@ -374,7 +516,7 @@
 
         <!-- about teacher -->
         <section class="p-5 h-auto topBlurBackDrop" id="aboutTeacherSection">
-        <!-- <section class="p-5 h-auto topBlurBackDrop dnabg" id="aboutTeacherSection"> -->
+            <!-- <section class="p-5 h-auto topBlurBackDrop dnabg" id="aboutTeacherSection"> -->
 
             <div class="row align-items-center">
                 <div class="col-lg-5 col-12">
@@ -391,7 +533,7 @@
                             <p class="py-1 aboutTxtSize">2021 වසරේ ජීව විද්‍යාව අංශයෙන් උසස් පෙළ විභාගයට පෙනී සිට පළමු
                                 අවස්ථාවෙන්ම දිවයිනේ
                                 ඉහළම සාමාර්ථයක් වාර්ථා කරමින් සමත්ව ශ්‍රී ජයවර්ධනපුර විශ්වවිද්‍යාලීය වෛද්‍ය පීඨයට
-                                තේරී පත්ව වර්තමානයෙහි එහිඑහි වෛද්‍ය උපාධි කටයුතු සාර්ථකව හදාරමින් සිටී.</p>
+                                තේරී පත්ව වර්තමානයෙහි එහි වෛද්‍ය උපාධි කටයුතු සාර්ථකව හදාරමින් සිටී.</p>
                             <p class="py-1 aboutTxtSize">වෛද්‍ය ශිෂ්‍යයකු ලෙස ලත් අත්දැකීම්ද සාර්ථකව උසස්පෙළ හදාරා ලත්
                                 අත්දැකීම්ද යන දෙවර්ගයම
                                 පදනම් කරගෙන ඕනෑම මට්ටමක සිටින සිසුවෙකු විශිෂ්ඨ ප්‍රතිඵලයක් කරා ඔසවා තැබීමට හැකිවීම
@@ -399,7 +541,7 @@
                             <p class="py-1 aboutTxtSize">ප්‍රායෝගිකත්වයෙන් යුතුව තාර්කිකව ඉගැන්වීම, එතෙක් පැවැති
                                 සාම්ප්‍රදායික
                                 BIO
-                                ඉගැන්වීම් කලාව අඅතික්‍රමණයට හේතු විය.</p>
+                                ඉගැන්වීම් කලාව අතික්‍රමණයට හේතු විය.</p>
                         </div>
 
 
@@ -448,7 +590,7 @@
                     <h4 class="py-2 py-md-3 topic">Revision Class </h4>
                     <img src="./resources/home/animatedComponents/rivision.webp" class="processDesc my-2" height="60"
                         alt="">
-                    <p class="aboutTxtSize processDesc my-1 px-lg-5"> මාස 8ක් වැනි කාලයක් තුළ මුළු විශය නිර්දේශයම 100%ක්
+                    <p class="aboutTxtSize processDesc my-1 px-lg-5"> මාස 8ක් වැනි කාලයක් තුළ මුළු විෂය නිර්දේශයම 100%ක්
                         අංගසම්පූර්ණවම
                         ඉගැන්වීම සිදුකරන
                         අතර ප්‍රශ්න
@@ -689,12 +831,13 @@
                         </li>
                         <li><a href="#ourProcessSection" class="text-light " style="text-decoration: none;">Process</a>
                         </li>
-                        <li><a href="" class="text-light " style="text-decoration: none;">Quizzes</a></li>
+                        <li><a href="#specialtieseSection" class="text-light " style="text-decoration: none;">Our Specialties</a></li>
                         <li><a href="./portal/studentDashboard.php" class="text-light "
                                 style="text-decoration: none;">Student Portal</a>
                         <li><a href="./portal/adminDashboard.php" class="text-light "
                                 style="text-decoration: none;">Admin Panel</a>
                         </li>
+
                     </ul>
                     <h4 class="fw-lighter PT2">Telegram Channels</h4>
                     <ul style="list-style: none;">
