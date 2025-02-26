@@ -1,8 +1,8 @@
 document.addEventListener("keydown", function (e) {
   // Disable F12
-  if (e.key === 'F12') {
-    e.preventDefault();
-  }
+  // if (e.key === 'F12') {
+  //   e.preventDefault();
+  // }
   // Disable Ctrl + Shift + I
   if (e.ctrlKey && e.shiftKey && e.key === "I") {
     e.preventDefault();

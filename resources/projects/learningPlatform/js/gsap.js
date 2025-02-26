@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     );
 
     gsap.to(homeSection, {
-      // y: +16,
+      y: +16,
       duration: 1,
       ease: "power1.out",
     });
@@ -296,15 +296,4 @@ window.addEventListener("resize",()=>{
   //     duration: 0.5,
   //   });
   // });
-  $("#homeCarousel").owlCarousel({
-    items: 1,
-    loop: true,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: true,
-    dots: true,
-    nav: true,
-    navText: ["<span class='carousel-nav-prev'>&#10094;</span>", "<span class='carousel-nav-next'>&#10095;</span>"]
-});
-
 });
