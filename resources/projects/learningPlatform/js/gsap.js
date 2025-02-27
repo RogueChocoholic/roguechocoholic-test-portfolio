@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   window.onload = function () {
     var text = document.querySelectorAll(".subtext");
     var navHeight = document.getElementById("topNav").offsetHeight;
-    var goUpBtn = document.querySelectorAll(".goUpBtn");
+    // var goUpBtn = document.querySelectorAll(".goUpBtn");
     var homeSection = document.querySelectorAll(".homeSection");
     var homeSection2 = document.querySelectorAll("#homeSection2");
     var navMain = document.querySelectorAll("#navNiew");
@@ -46,18 +46,18 @@ document.addEventListener("DOMContentLoaded", (event) => {
     //   }
     // );
 
-    gsap.fromTo(
-      goUpBtn,
-      {
-        opacity: 0,
-      },
-      {
-        opacity: 1,
-        ease: "power1.out",
-        duration: 2,
-        delay: 1,
-      }
-    );
+    // gsap.fromTo(
+    //   goUpBtn,
+    //   {
+    //     opacity: 0,
+    //   },
+    //   {
+    //     opacity: 1,
+    //     ease: "power1.out",
+    //     duration: 2,
+    //     delay: 1,
+    //   }
+    // );
 
     gsap.to(homeSection, {
       // y: +16,
@@ -303,8 +303,7 @@ window.addEventListener("resize",()=>{
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
     dots: true,
-    nav: true,
-    navText: ["<span class='carousel-nav-prev'>&#10094;</span>", "<span class='carousel-nav-next'>&#10095;</span>"]
+    nav: false,
 });
 
 });
