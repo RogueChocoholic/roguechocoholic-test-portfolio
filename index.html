@@ -14,18 +14,57 @@
     <meta name="keywords"
         content="Kovidha Subasinghe, Portfolio, Java Institute, Birmingham City University, Web Developer, Full-Stack Software Engineering, Projects">
     <meta name="author" content="Kovidha Subasinghe">
+    <style>
+        /* Add animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-in-out;
+        }
+
+        .fade-in.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Navbar hover effect */
+        .navbar-nav a:hover {
+            color: gold;
+            transition: color 0.3s;
+        }
+
+        /* Smooth hover effects for project links */
+        .projectList1 li a:hover {
+            color: #f0c040;
+            transition: color 0.5s;
+        }
+
+        /* Carousel and project hover effects */
+        .carousel-item img:hover {
+            transform: scale(1.05);
+            transition: transform 0.5s ease;
+        }
+
+        .carousel-description {
+            background-color: rgba(58, 58, 58, 0.233);
+            padding: 15px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .carousel-description:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 
 <body>
-    <!-- <div class="section1">
-        <img src="./resources/20231104_212216.jpg" class="position-absolute end-0 col-xl-6 col-lg-7 col-8" alt="">
-    </div> -->
     <div class="container-fluid">
-        <!-- <div class="section1 col-12">
-            <img src="./resources/20231104_212216.jpg" class="position-absolute end-0 col-4" alt="">
-        </div> -->
-
-
         <nav class="navbar navbar-expand-lg blurBackdrop sticky-top">
             <div class="container-fluid">
                 <a class="navbar-brand offset-lg-1 zoom-mini">
@@ -61,7 +100,6 @@
                     <h6 class="homeTexts4">I make things for the internet</h6>
 
                     <div class="my-3 icons">
-                        <!-- <a href=""><i class="fab fa-telegram-plane fa-2x"></i></a> -->
                         <a href="https://github.com/RogueChocoholic" target="_blank"><i
                                 class="fab fa-github fa-2x"></i></a>
                         <a href="https://www.linkedin.com/in/kovidha-subasinghe/" target="_blank"> <i
@@ -69,9 +107,6 @@
                         <a href="https://www.behance.net/kovidhasubasinghe" target="_blank"> <i
                                 class="fab fa-behance fa-2x"></i></a>
                     </div>
-                    <!-- <center>
-                    <button class=" btn btn-outline-dark col-7 col-md-5 col-xl-3 btn-sm mt-4">Download CV</button>
-                </center> -->
                 </div>
 
 
@@ -84,34 +119,12 @@
                         <li class="zoom-mini "><a class="noDecorationAnchor" href="./resources/projects/lqlk/index.html"
                                 target="_blank">LQ.LK 2024 - Lovers' Quarrel 2024 Big Match Website</a>
                         </li>
-                        <li class="zoom-mini "><a class="noDecorationAnchor" href="./resources/projects/learningPlatform/index.html"
-                                target="_blank">PJ Biology - Tuitoin Class Website</a>
+                        <li class="zoom-mini "><a class="noDecorationAnchor" href="https://pjbiology.lk/"
+                                target="_blank">PJ Biology -
+                                Tuitoin Class Website</a>
                         </li>
                     </ul>
                 </div>
-
-                <!-- <marquee behavior="scroll" direction="right" class="mt-5 blur" scrollamount="5">
-                    <i class="col-3 fab fa-2x fa-html5"></i>
-                    <i class="col-3 fab fa-2x fa-css3-alt"></i>
-                    <i class="col-3 fab fa-2x fa-js"></i>
-                    <i class="col-3 fab fa-2x fa-php"></i>
-                    <i class="col-3 fab fa-2x fa-java"></i>
-                    <i class="col-3 fab fa-2x fa-bootstrap"></i>
-    
-                
-    
-                </marquee>
-                <marquee behavior="scroll" direction="left" class="mt-5 blur" scrollamount="5">
-                    <i class="col-3 fab fa-2x fa-html5"></i>
-                    <i class="col-3 fab fa-2x fa-css3-alt"></i>
-                    <i class="col-3 fab fa-2x fa-js"></i>
-                    <i class="col-3 fab fa-2x fa-php"></i>
-                    <i class="col-3 fab fa-2x fa-java"></i>
-                    <i class="col-3 fab fa-2x fa-bootstrap"></i>
-    
-              
-    
-                </marquee> -->
             </div>
 
         </section>
@@ -162,7 +175,60 @@
             <h6>What I did?</h6>
             <h1>Portfolio</h1>
             <div class="m-5 row align-items-center justify-content-center gap-5">
+                <!-- project 3 -->
+                <div id="project2carousel"
+                    class="carousel slide col-10 zoom-mini col-lg-5 carousel-showDesc rounded-start-5 shadow"
+                    data-bs-ride="true">
+                    <div class="carousel-inner ">
+                        <div class="carousel-item active">
+                            <img src="./resources/projects/learningPlatform/screenshots/pjbiologySS (1).png" loading="lazy"
+                                class="d-block w-100 rounded-start-5" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./resources/projects/learningPlatform/screenshots/pjbiologySS (2).png" loading="lazy"
+                                class="d-block w-100 rounded-start-5" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./resources/projects/learningPlatform/screenshots/pjbiologySS (3).png" loading="lazy"
+                                class="d-block w-100 rounded-start-5" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./resources/projects/learningPlatform/screenshots/pjbiologySS (4).png" loading="lazy"
+                                class="d-block w-100 rounded-start-5" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./resources/projects/learningPlatform/screenshots/pjbiologySS (5).png" loading="lazy"
+                                class="d-block w-100 rounded-start-5" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./resources/projects/learningPlatform/screenshots/pjbiologySS (6).png" loading="lazy"
+                                class="d-block w-100 rounded-start-5" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./resources/projects/learningPlatform/screenshots/pjbiologySS (7).png" loading="lazy"
+                                class="d-block w-100 rounded-start-5" alt="...">
+                        </div>
+                    </div>
 
+                    <div
+                        class="carousel-description d-flex align-items-center justify-content-center flex-column p-3 px-5 rounded-start-5">
+                        <h4 class="mobsizeHeader">pjbiology</h4>
+                        <p class="mobsize"> Learning management web application for PJBiology.</p>
+                        <a href="https://pjbiology.lk/" target="_blank"
+                            class="btn btn-outline-warning btn-sm ">Go
+                            to live site</a>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#project2carousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#project2carousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
                 <!-- project 1 -->
                 <div id="project1carousel"
                     class="carousel slide col-10 zoom-mini col-lg-5 carousel-showDesc rounded-end-5 shadow"
@@ -223,6 +289,7 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
+
 
                 <!-- project 2 -->
                 <div id="project2carousel"
